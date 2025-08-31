@@ -15,8 +15,13 @@
 }
 
 .project {
-    background-color: white;
-    width: 600px;
-    height: 400px;
+      background: url("/Images/orox.png") no-repeat;
+    width: 650px;
+    height: 500px;
+    
+}
+
+.projectCards > .project:nth-child(2) { 
+    background: url("/Images/amnesix.png") no-repeat; 
     
 }

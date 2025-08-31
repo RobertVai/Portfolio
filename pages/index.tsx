@@ -4,6 +4,7 @@ import Stack from "@/components/Stack/Stack";
 import Cards from "@/components/Cards/Cards";
 import styles from "@/styles/Home.module.css"
 import Projects from "@/components/Projects/Projects";
+import Contact from "@/components/Contact/Contact";
 
 
 
@@ -14,6 +15,7 @@ export default function Home() {
   <Cards />
   <Stack />
   <Projects />
+  <Contact />
       
     </div>
   );
