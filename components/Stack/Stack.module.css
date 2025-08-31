@@ -1,0 +1,40 @@
+.stack {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 1rem;
+
+    
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2.5rem;
+    gap: 5rem;
+
+}
+
+.line {
+    width: 100%;
+     color: #dac5a7;
+}
+
+
+.stack h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    font-size: 3.5rem;
+}
+
+.stack img {
+    width: 80px;
+    height: 80px;
+    border-radius: 1rem;
+}
