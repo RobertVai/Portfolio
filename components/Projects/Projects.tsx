@@ -7,7 +7,7 @@ const Projects = () => {
     <div className={styles.projectsWrapper}>
         <h4>Projects</h4>
         <div className={styles.projectCards}>
-            <div className={styles.project}></div>
+            <div className={styles.project}> </div>
             <div className={styles.project}></div>
             <div className={styles.project}></div>
             <div className={styles.project}></div>
