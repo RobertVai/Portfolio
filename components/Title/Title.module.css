@@ -1,0 +1,30 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #dac5a7;
+    padding-top: 10rem;
+   
+}
+
+.title h1 {
+    font-weight: normal;
+    font-size: 9rem;
+    transform: scaleY(1.1); 
+    margin: 0;
+}
+
+
+.title h2 {
+    font-style: italic ;
+    font-size: 8rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.title p {
+    font-size: 2.5rem;
+    color: #c9b69a;
+}
+
+

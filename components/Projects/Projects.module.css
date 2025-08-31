@@ -1,0 +1,22 @@
+.projectsWrapper h4 {
+    padding-top: 5rem;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.projectCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+.project {
+    background-color: white;
+    width: 600px;
+    height: 400px;
+    
+}
