@@ -15,13 +15,23 @@
 }
 
 .project {
-      background: url("/Images/orox.png") no-repeat;
-    width: 650px;
-    height: 500px;
+      background: url("/Images/orox.jpeg") ;
+      background-repeat: no-repeat;
+  background-position: center; 
+  background-size: 190%;
+background-position: 40% 40%;
+    width: 900px;
+    height: 700px;
     
 }
 
 .projectCards > .project:nth-child(2) { 
-    background: url("/Images/amnesix.png") no-repeat; 
+    background: url("/Images/amnesia.jpeg") ;
+          background-repeat: no-repeat;
+  background-position: center; 
+  background-size: 190%;
+background-position: 70% 50%;
+    width: 900px;
+    height: 700px;
     
 }
