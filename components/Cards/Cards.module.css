@@ -1,43 +1,74 @@
 .cardsWrapper {
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 3rem 2rem;
-gap: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3rem 2rem;
+  gap: 1.5rem;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    line-height: 1.7;
-    letter-spacing: 1px;
-    background: #181716;
-    border: 1px solid rgba(255, 255, 255, 0.144);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-    backdrop-filter: blur(8px);
-    width: 360px;
-    height: 210px;
-    padding: 2rem 2rem;
-    margin: 1rem;
-   
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  background: #181716;
+  border: 1px solid rgba(255, 255, 255, 0.144);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+              rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+              rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  backdrop-filter: blur(8px);
+  max-width: 400px;
+  height: 210px;
+  padding: 2rem 2rem;
+  margin: 1rem;
+
+  
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 20px 40px,
+              rgba(255, 215, 137, 0.2) 0px 0px 15px;
+  border-color: rgba(255, 215, 137, 0.35);
 }
 
 
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+}
+
+.card:hover::after {
+  animation: shine 0.8s ease forwards;
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
 
 .card h4 {
-    font-size: 1.2rem;
-    margin: 0;
-    transform: scaleY(1.13);
-    
-    
-    
+  font-size: 1.2rem;
+  margin: 0 0 1rem 0;
+  transform: scaleY(1.13);
 }
 
 .card p {
-    font-size: 1.15rem;
-    
-    
-
+  font-size: 1.15rem;
 }

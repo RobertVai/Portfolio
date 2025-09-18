@@ -1,26 +1,34 @@
-import React from 'react'
-import styles from "./Stack.module.css"
+import React from "react";
+import styles from "./Stack.module.css";
+
+const skills = [
+  { label: "JavaScript", src: "./Images/js.png" },
+  { label: "TypeScript", src: "./Images/typescript.png" },
+  { label: "React", src: "./Images/physics.png" },
+  { label: "Node.js", src: "./Images/nodejs.png" },
+  { label: "MongoDB", src: "./Images/mongodb.png" },
+  { label: "GitHub", src: "./Images/github.png" },
+  { label: "CSS3", src: "./Images/css.png" },
+  { label: "HTML5", src: "./Images/html.png" },
+];
 
 const Stack = () => {
   return (
-    <div className={styles.stack}>
-        <hr className={styles.line} />
-        <h3> My Skills </h3>
+    <section id="skills" className={styles.stack}>
+      <h3 className={styles.title}>My Skills</h3>
+
+      <div className={styles.board}>
         <div className={styles.skills}>
-        <img src="./Images/js.png" alt="JavaScript" />
-        <img src="./Images/typescript.png" alt="TypeScript" />
-        <img src="./Images/physics.png" alt="React" />
-        <img src="./Images/nodejs.png" alt="NodeJs" />
-        <img src="./Images/mongodb.png" alt="MongoDB" />
-         <img src="./Images/github.png" alt="GitHub" />
-        <img src="./Images/css.png" alt="CSS" />
-        <img src="./Images/html.png" alt="HTML" />
+          {skills.map((s) => (
+            <div key={s.label} className={styles.skill}>
+              <img src={s.src} alt={s.label} />
+              <span>{s.label}</span>
+            </div>
+          ))}
         </div>
-        <hr className={styles.line} />
-       
+      </div>
+    </section>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Stack
+export default Stack;

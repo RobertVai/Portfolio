@@ -9,7 +9,7 @@
 
 .title h1 {
     font-weight: normal;
-    font-size: 9rem;
+    font-size: 12rem;
     transform: scaleY(1.1); 
     margin: 0;
 }
@@ -17,7 +17,7 @@
 
 .title h2 {
     font-style: italic ;
-    font-size: 8rem;
+    font-size: 10rem;
     font-weight: normal;
     margin: 0;
 }

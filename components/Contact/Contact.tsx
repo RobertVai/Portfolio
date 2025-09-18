@@ -53,8 +53,8 @@ const onSubmit = async (data: FormValues) => {
           <h2 className={styles.kicker}>GET IN</h2>
           <h2 className={styles.kicker}>TOUCH</h2>
            <div className={styles.socials}>
-            <Link href="https://www.linkedin.com/in/robert-vaitechovskij/"> <img src="./svg/linkedin.svg" alt="LinkedIn" /></Link>
-            <Link href="https://github.com/RobertVai"> <img src="./svg/github.svg" alt="GitHub" /></Link>
+            <Link href="https://www.linkedin.com/in/robert-vaitechovskij/" target="_blank" rel="noopener noreferrer"> <img src="./svg/linkedin.svg" alt="LinkedIn" /></Link>
+            <Link href="https://github.com/RobertVai" target="_blank" rel="noopener noreferrer"> <img src="./svg/github.svg" alt="GitHub" /></Link>
         </div>
         </div>
 

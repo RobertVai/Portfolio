@@ -5,16 +5,20 @@ import Cards from "@/components/Cards/Cards";
 import styles from "@/styles/Home.module.css"
 import Projects from "@/components/Projects/Projects";
 import Contact from "@/components/Contact/Contact";
+import Header from "@/components/Header/Header";
+import AboutMe from "@/components/AboutMe/AboutMe";
 
 
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Header />
   < Title />
   <Cards />
   <Stack />
   <Projects />
+  <AboutMe />
   <Contact />
       
     </div>
