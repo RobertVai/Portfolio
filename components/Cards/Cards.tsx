@@ -19,6 +19,6 @@ const Cards = () => {
              — deploy anywhere or on your own server.</p></div>
     </div>
   )
-}
+ }
 
 export default Cards
