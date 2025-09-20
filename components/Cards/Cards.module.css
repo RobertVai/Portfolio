@@ -84,3 +84,18 @@
 
 
 }
+
+@media (max-width: 500px) { 
+  .cardsWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    height: 100px;
+  }
+
+  .card h4 {
+    font-size: 1rem;
+  }
+}

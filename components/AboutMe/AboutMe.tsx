@@ -35,7 +35,7 @@ export default function AboutMe() {
 </div>
 
         <div className={styles.photoBox}>
-          <img src="./Images/profile.jpg" alt="Robert Vaitechovskij" />
+          <img src="/Images/profile.jpg" alt="Robert Vaitechovskij" />
         </div>
       </div>
     </section>
