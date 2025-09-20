@@ -90,11 +90,10 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 110%;
+  bottom: 110%;
   display: none;
   flex-direction: column;
   gap: 8px;
-  padding: 10px;
   border-radius: 10px;
   background: rgba(0,0,0,.32);
   backdrop-filter: blur(6px);
@@ -183,4 +182,23 @@
   background: #dac5a7;
   color: #181716;
   border-color: #dac5a7;
+}
+
+@media (max-width: 1800px) { 
+
+.projectCards {
+  display: flex;
+  flex-direction: column;
+}
+.project {
+  background: url("/Images/orox.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 190%;
+  background-position: 40% 37%;
+  width: 900px;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+}
 }

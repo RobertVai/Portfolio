@@ -10,11 +10,11 @@ const links = [
 
 export default function Header() {
   const [open, setOpen] = useState(false);
-  const [hash, setHash] = useState<string>(""); // пустое изначально
+  const [hash, setHash] = useState<string>(""); 
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      setHash(window.location.hash); // первый раз берём из браузера
+      setHash(window.location.hash); 
       const onHashChange = () => setHash(window.location.hash);
       window.addEventListener("hashchange", onHashChange);
       return () => window.removeEventListener("hashchange", onHashChange);

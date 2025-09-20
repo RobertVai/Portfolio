@@ -94,7 +94,13 @@
   50% { transform: translateY(-6px); }
 }
 
+@media (max-width: 1300px) {
+  .skill img { width: 56px; height: 56px; }
+  .board {
+    width: 96%;
+  }
 
+}
 @media (max-width: 900px) { .title { font-size: 2.2rem; } }
 @media (max-width: 600px) {
   .title { font-size: 1.9rem; }

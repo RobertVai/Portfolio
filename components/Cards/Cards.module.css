@@ -72,3 +72,15 @@
 .card p {
   font-size: 1.15rem;
 }
+
+
+@media (max-width: 1800px) { 
+
+  .card {
+    height: 250px;
+    
+  }
+  
+
+
+}
