@@ -21,8 +21,13 @@
   display: block;
   width: 120px;
   height: 2px;
-  margin-top: .6rem;
-  background: linear-gradient(90deg, rgba(218,197,167,0), #dac5a7, rgba(218,197,167,0));
+  margin-top: 0.6rem;
+  background: linear-gradient(
+    90deg,
+    rgba(218, 197, 167, 0),
+    #dac5a7,
+    rgba(218, 197, 167, 0)
+  );
 }
 
 .content {
@@ -34,14 +39,13 @@
   justify-content: space-between;
 }
 
-
 .text {
   flex: 1;
   min-width: 280px;
   font-size: 1.7rem;
   line-height: 1.5;
   color: #cdb79d;
-  letter-spacing: .3px;
+  letter-spacing: 0.3px;
 }
 
 .text p {
@@ -52,13 +56,12 @@
   color: #dac5a7;
 }
 
-
 .photoBox {
   flex-shrink: 0;
   border-radius: 16px;
   overflow: hidden;
-  border: 1px solid rgba(255,255,255,.08);
-  box-shadow: 0 12px 28px rgba(0,0,0,.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
   max-width: 280px;
 }
 
@@ -67,8 +70,8 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-  filter: grayscale(.1) contrast(1.05);
-  transition: transform .4s ease, filter .3s ease;
+  filter: grayscale(0.1) contrast(1.05);
+  transition: transform 0.4s ease, filter 0.3s ease;
 }
 
 .photoBox img:hover {
@@ -76,9 +79,100 @@
   filter: none;
 }
 
-
 @media (max-width: 900px) {
-  .title { font-size: 2.2rem; }
-  .content { flex-direction: column; align-items: flex-start; }
-  .photoBox { max-width: 220px; }
+  .title {
+    font-size: 2.2rem;
+  }
+  .content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .photoBox {
+    max-width: 220px;
+  }
+}
+@media (max-width: 768px) {
+  .about {
+    padding: 4rem 2rem;
+  }
+
+  .title {
+    font-size: 2.6rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .photoBox {
+    order: -1;
+    margin: 0 auto 1rem;
+    width: 60vw;
+    max-width: 420px;
+  }
+
+  .photoBox img {
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+  }
+
+  .text {
+    text-align: left;
+  }
+
+  .text p {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .about {
+    padding: 3rem 1rem;
+  }
+
+  .title {
+    font-size: 1.9rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .photoBox {
+    order: -1;
+    margin: 0 auto 0.75rem;
+    width: 68vw;
+    max-width: 360px;
+  }
+
+  .photoBox img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
+  .text {
+    text-align: left;
+  }
+
+  .text p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin-bottom: 0.75rem;
+  }
+
+  .accent {
+    white-space: nowrap;
+  }
 }

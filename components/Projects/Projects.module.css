@@ -10,8 +10,13 @@
   display: block;
   width: 120px;
   height: 2px;
-  margin-top: .6rem;
-  background: linear-gradient(90deg, rgba(218,197,167,0), #dac5a7, rgba(218,197,167,0));
+  margin-top: 0.6rem;
+  background: linear-gradient(
+    90deg,
+    rgba(218, 197, 167, 0),
+    #dac5a7,
+    rgba(218, 197, 167, 0)
+  );
 }
 
 .projectCards {
@@ -21,7 +26,6 @@
   align-items: center;
   gap: 3rem;
 }
-
 
 .project {
   background: url("/Images/orox.jpeg");
@@ -47,7 +51,6 @@
   overflow: hidden;
 }
 
-
 .overlay {
   position: absolute;
   bottom: 18px;
@@ -61,27 +64,27 @@
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   border: 1px solid rgba(218, 197, 167, 0.45);
-  box-shadow: 0 8px 18px rgba(0,0,0,.25), inset 0 0 0 1px rgba(255,255,255,.04);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
   z-index: 3;
 }
 
 .overlayBtn {
-  padding: .45rem 1.1rem;
+  padding: 0.45rem 1.1rem;
   border-radius: 10px;
   border: 1px solid #dac5a7;
   background: transparent;
   color: #dac5a7;
-  letter-spacing: .3px;
+  letter-spacing: 0.3px;
   text-decoration: none;
   cursor: pointer;
-  transition: background .25s ease, color .25s ease, border-color .25s ease;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
 .overlayBtn:hover {
   background: #dac5a7;
   color: #181716;
   border-color: #dac5a7;
 }
-
 
 .dropdown {
   position: relative;
@@ -95,23 +98,26 @@
   flex-direction: column;
   gap: 8px;
   border-radius: 10px;
-  background: rgba(0,0,0,.32);
+  background: rgba(0, 0, 0, 0.32);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  border: 1px solid rgba(218,197,167,.45);
-  box-shadow: 0 8px 18px rgba(0,0,0,.25), inset 0 0 0 1px rgba(255,255,255,.04);
+  border: 1px solid rgba(218, 197, 167, 0.45);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
   z-index: 5;
 }
 .dropdown:hover .menu,
-.dropdown:focus-within .menu { display: flex; }
+.dropdown:focus-within .menu {
+  display: flex;
+}
 .dropdown .menu a {
-  padding: .45rem .6rem;
+  padding: 0.45rem 0.6rem;
   border-radius: 8px;
-  border: 1px solid rgba(218,197,167,.35);
+  border: 1px solid rgba(218, 197, 167, 0.35);
   color: #dac5a7;
   text-decoration: none;
   text-align: center;
-  transition: background .2s, color .2s, border-color .2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
 .dropdown .menu a:hover {
   background: #dac5a7;
@@ -119,25 +125,29 @@
   border-color: #dac5a7;
 }
 
-
 .flipWrap {
   position: absolute;
   inset: 0;
   perspective: 1400px;
   transform-style: preserve-3d;
-  transition: transform .8s ease;
+  transition: transform 0.8s ease;
   z-index: 2;
 }
 
-.face, .back {
+.face,
+.back {
   position: absolute;
   inset: 0;
   backface-visibility: hidden;
   border-radius: 8px;
 }
 
-.face { background: transparent; }
-.face2 { background: transparent; }
+.face {
+  background: transparent;
+}
+.face2 {
+  background: transparent;
+}
 
 .back {
   transform: rotateY(180deg);
@@ -147,12 +157,15 @@
   gap: 1rem;
   text-align: center;
   padding: 2rem;
-  background:
-    radial-gradient(120% 90% at 10% -20%, rgba(255,215,137,.12), transparent 60%),
+  background: radial-gradient(
+      120% 90% at 10% -20%,
+      rgba(255, 215, 137, 0.12),
+      transparent 60%
+    ),
     linear-gradient(135deg, #181716, #232220);
   color: #dac5a7;
-  border: 1px solid rgba(255,255,255,.08);
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
 
 .back h3 {
@@ -165,18 +178,20 @@
   margin: 0;
 }
 
-.isFlipped { transform: rotateY(180deg); }
+.isFlipped {
+  transform: rotateY(180deg);
+}
 
 .closeBtn {
   align-self: center;
-  margin-top: .6rem;
-  padding: .45rem 1.1rem;
+  margin-top: 0.6rem;
+  padding: 0.45rem 1.1rem;
   border-radius: 8px;
   border: 1px solid #dac5a7;
   background: transparent;
   color: #dac5a7;
   cursor: pointer;
-  transition: background .25s ease, color .25s ease, border-color .25s ease;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
 .closeBtn:hover {
   background: #dac5a7;
@@ -184,21 +199,105 @@
   border-color: #dac5a7;
 }
 
-@media (max-width: 1800px) { 
+@media (max-width: 1800px) {
+  .projectCards {
+    display: flex;
+    flex-direction: column;
+  }
+  .project {
+    background: url("/Images/orox.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 190%;
+    background-position: 40% 37%;
+    width: 900px;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+  }
+}
 
-.projectCards {
-  display: flex;
-  flex-direction: column;
+@media (max-width: 768px) {
+  .projectCards {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .project {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .projectCards > .project:nth-child(2) {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .overlay {
+    bottom: 12px;
+    gap: 12px;
+    padding: 8px 12px;
+  }
+
+  .overlayBtn {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  .back h3 {
+    font-size: 1.7rem;
+  }
+
+  .back p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
 }
-.project {
-  background: url("/Images/orox.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 190%;
-  background-position: 40% 37%;
-  width: 900px;
-  height: 700px;
-  position: relative;
-  overflow: hidden;
-}
+@media (max-width: 500px) {
+  .projectCards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .project {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .projectCards > .project:nth-child(2) {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .overlay {
+    bottom: 10px;
+    gap: 10px;
+    padding: 8px 10px;
+  }
+
+  .overlayBtn {
+    padding: 0.35rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  .projectsWrapper h4 {
+    font-size: 2rem;
+  }
+  .back h3 {
+    font-size: 1.5rem;
+  }
+
+  .back p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
 }
