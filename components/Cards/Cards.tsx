@@ -3,6 +3,7 @@ import styles from './Cards.module.css'
 
 const Cards = () => {
   return (
+    <>
     <div className={styles.cardsWrapper}>
         <div className={styles.card}>
             <h4>FRONT-END DEVELOPMENT</h4>
@@ -17,7 +18,11 @@ const Cards = () => {
         <div className={styles.card}> <h4>PERFORMANCE & DEPLOYMENT</h4>
         <p>Image optimization, code-splitting, caching and SEO basics. CI/CD with GitHub Actions
              — deploy anywhere or on your own server.</p></div>
+              
     </div>
+    <p className={styles.scrollHint}>Swipe right to see more ➜</p>
+   </>
+    
   )
  }
 

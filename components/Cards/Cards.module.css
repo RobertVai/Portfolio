@@ -55,6 +55,15 @@
   animation: shine 0.8s ease forwards;
 }
 
+.scrollHint {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  opacity: 0.7;
+  display: none;
+  position: relative;
+  bottom: 2rem;
+}
 @keyframes shine {
   100% {
     left: 125%;
@@ -103,5 +112,48 @@
 
   .card h4 {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .cardsWrapper {
+    padding: 2rem 1rem;
+    gap: 1rem;
+
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: visible;
+
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .cardsWrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    flex: 0 0 80%;
+    min-width: 80%;
+    max-width: none;
+    margin: 0 0.5rem;
+
+    height: auto;
+    min-height: 260px;
+
+    scroll-snap-align: center;
+  }
+
+  .card h4 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+  }
+
+  .scrollHint {
+    display: block;
   }
 }

@@ -15,7 +15,7 @@ const skills = [
 const Stack = () => {
   return (
     <section id="skills" className={styles.stack}>
-      <h3 className={styles.title}>My Skills</h3>
+      <h3 className={styles.title}>Tech Stack</h3>
 
       <div className={styles.board}>
         <div className={styles.skills}>

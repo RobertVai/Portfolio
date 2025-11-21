@@ -155,11 +155,12 @@
     gap: 0.5rem;
   }
   .skill img {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
   }
   .board {
     width: 89%;
+    padding: 1rem;
   }
   .skill {
     padding: 0.5rem 0.5rem;
