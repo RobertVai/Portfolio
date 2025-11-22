@@ -249,6 +249,13 @@
     background-position: center;
   }
 
+   .projectCards > .project:nth-child(3) {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+  }
+
   .overlay {
     bottom: 12px;
     gap: 12px;
@@ -284,6 +291,13 @@
   }
 
   .projectCards > .project:nth-child(2) {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .projectCards > .project:nth-child(3) {
     width: 100%;
     height: 400px;
     background-size: cover;
