@@ -51,6 +51,17 @@
   overflow: hidden;
 }
 
+.projectCards > .project:nth-child(3) {
+  background: url("/Images/tdo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 900px;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
 .overlay {
   position: absolute;
   bottom: 18px;
